@@ -12,7 +12,7 @@ export default function NotFound() {
           </div>
 
           <p className="mt-4 text-sm text-gray-600">
-            Did you forget to add the page to the router?
+            Maybe you are looking for a page that doesn't exist or you followed a broken link. If you think this is a mistake, please contact the <a href="https://wa.me/254708581688?text=Sang'onjo%20Ronje%20%F0%9F%91%8F" className="text-red-600 hover:underline" target="_blank" rel="noopener noreferrer">website administrator.</a>. Thank you for your understanding. Go back to <a href="https://dho-roho-translator.vercel.app/" className="text-red-600 hover:underline" rel="noopener noreferrer">Home Page.</a>
           </p>
         </CardContent>
       </Card>
