@@ -66,8 +66,35 @@ export default function Translator() {
     return tempReverseMap;
   })();
 
-  const sortedKeys = Object.keys(translationMap).sort((a, b) => b.length - a.length);
-  const sortedReverseKeys = Object.keys(reverseTranslationMap).sort((a, b) => b.length - a.length);
+  const sortedKeys = Object.keys(translationMap).sort((a, b) => {
+    // First sort by length (longer first)
+    if (b.length !== a.length) {
+      return b.length - a.length;
+    }
+    // If same length, prioritize ng' over ng
+    if (a.startsWith("NG'") && b.startsWith("NG") && !b.startsWith("NG'")) {
+      return -1;
+    }
+    if (b.startsWith("NG'") && a.startsWith("NG") && !a.startsWith("NG'")) {
+      return 1;
+    }
+    return 0;
+  });
+  
+  const sortedReverseKeys = Object.keys(reverseTranslationMap).sort((a, b) => {
+    // First sort by length (longer first)
+    if (b.length !== a.length) {
+      return b.length - a.length;
+    }
+    // If same length, prioritize G over F combinations when dealing with reverse mapping
+    if (a.startsWith("G") && b.startsWith("F")) {
+      return -1;
+    }
+    if (b.startsWith("G") && a.startsWith("F")) {
+      return 1;
+    }
+    return 0;
+  });
 
   const translateToDhoRoho = (text: string): string => {
     const lines = text.split('\n');
