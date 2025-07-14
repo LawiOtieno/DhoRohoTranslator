@@ -2,16 +2,15 @@ import { Church, Users, Heart, Crown, User, HandHelping, Link as LinkIcon, Langu
 
 export default function About() {
   const martyrs = [
-    "Alfayo Odongo Mango",
-    "Lawi Obonyo Ongwek", 
-    "Joel Owino",
-    "Persila Adongo",
-    "Zadok Aol",
-    "Isaka Obayo",
-    "Salome Omondi",
-    "Musa Muga",
-    "Turfosa Aloo",
-    "Dorsila Kinyou"
+    "1. Alfayo Odongo ➟ Mach 🔥",
+    "2. Lawi Obonyo ➟ Tong' 🏹", 
+    "3. Isaka Obayo ➟ Tong' 🏹",
+    "4. Turfosa Aloo ➟ Tong' 🏹",
+    "5. Zadok Aol ➟ Mach 🔥",
+    "6. Joel Owino ➟ Mach 🔥",
+    "7. Persila Adongo ➟ Mach 🔥",
+    "8. Musa Muga ➟ Tong' 🏹",
+    "9. Salome Omondi ➟ Mach 🔥"
   ];
 
   return (
@@ -22,7 +21,7 @@ export default function About() {
           <div className="text-center mb-8">
             <div className="flex items-center justify-center mb-4">
               <img 
-                src="https://i.imgur.com/8ToqmB8.png" 
+                src="https://i.imgur.com/BUxE9oF.jpg" 
                 alt="Ruwe Holy Ghost Church Logo" 
                 className="h-16 w-16 md:h-20 md:w-20 rounded-full shadow-lg"
               />
@@ -160,7 +159,13 @@ export default function About() {
 
             {/* Conclusion */}
             <section className="text-center bg-red-600 text-white p-6 rounded-xl">
-              <Church className="mx-auto mb-4" size={48} />
+              <div className="flex justify-center items-center">
+                <img
+                  src="https://i.imgur.com/BUxE9oF.jpg"
+                  alt="Ruwe Holy Ghost Church Logo"
+                  className="h-16 w-16 md:h-20 md:w-20 rounded-full shadow-lg"
+                />
+              </div>
               <p className="text-lg md:text-xl font-medium leading-relaxed">
                 The Ruwe Holy Ghost Church stands as a significant indigenous African church with a rich history rooted in spiritual independence and marked by profound sacrifice.
               </p>

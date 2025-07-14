@@ -286,12 +286,12 @@ export default function Translator() {
         {/* Copyright */}
         <div className="mt-6 p-4 bg-gray-50 rounded-lg border">
           <h4 className="text-base md:text-lg font-semibold mb-2 flex items-center justify-center">
-            <span className="mr-2">©</span>Copyright © 2020 - 2025. All Rights Reserved.
+            <span className="mr-2">©</span>Copyright 2020 - 2025. All Rights Reserved.
           </h4>
           <p className="text-center text-sm md:text-base">
             Developed with <Heart className="inline text-red-500" size={16} /> by{" "}
             <a
-              href="https://wa.me/+254708581688"
+              href="https://wa.me/254708581688?text=Sang'onjo%20Ronje%20%F0%9F%91%8F"
               target="_blank"
               rel="noopener noreferrer"
               className="text-red-600 hover:text-red-800 underline"
