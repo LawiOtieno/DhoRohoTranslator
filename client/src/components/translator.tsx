@@ -106,38 +106,13 @@ export default function Translator() {
         while (remainingWord.length > 0) {
           let matchFound = false;
           
-          // Custom priority check for NG' vs NG to handle case-insensitive matching
-          if (remainingWord.startsWith("NG'")) {
-            // Check for NG' combinations first
-            for (const key of sortedKeys) {
-              if (key.startsWith("NG'") && remainingWord.startsWith(key)) {
-                translatedWord += translationMap[key as keyof typeof translationMap];
-                remainingWord = remainingWord.substring(key.length);
-                matchFound = true;
-                break;
-              }
-            }
-          } else if (remainingWord.startsWith("NG")) {
-            // Check for NG combinations only if not NG'
-            for (const key of sortedKeys) {
-              if (key.startsWith("NG") && !key.startsWith("NG'") && remainingWord.startsWith(key)) {
-                translatedWord += translationMap[key as keyof typeof translationMap];
-                remainingWord = remainingWord.substring(key.length);
-                matchFound = true;
-                break;
-              }
-            }
-          }
-          
-          // If no NG/NG' match found, use normal sorting
-          if (!matchFound) {
-            for (const key of sortedKeys) {
-              if (remainingWord.startsWith(key)) {
-                translatedWord += translationMap[key as keyof typeof translationMap];
-                remainingWord = remainingWord.substring(key.length);
-                matchFound = true;
-                break;
-              }
+          // Use the sorted keys to find the longest match first
+          for (const key of sortedKeys) {
+            if (remainingWord.startsWith(key)) {
+              translatedWord += translationMap[key as keyof typeof translationMap];
+              remainingWord = remainingWord.substring(key.length);
+              matchFound = true;
+              break;
             }
           }
           
@@ -166,38 +141,13 @@ export default function Translator() {
         while (remainingWord.length > 0) {
           let matchFound = false;
           
-          // Custom priority check for G vs F to handle case-insensitive matching
-          if (remainingWord.startsWith("G")) {
-            // Check for G combinations first (these come from NG' in Luo)
-            for (const key of sortedReverseKeys) {
-              if (key.startsWith("G") && remainingWord.startsWith(key)) {
-                translatedWord += reverseTranslationMap[key];
-                remainingWord = remainingWord.substring(key.length);
-                matchFound = true;
-                break;
-              }
-            }
-          } else if (remainingWord.startsWith("F")) {
-            // Check for F combinations only if not G
-            for (const key of sortedReverseKeys) {
-              if (key.startsWith("F") && remainingWord.startsWith(key)) {
-                translatedWord += reverseTranslationMap[key];
-                remainingWord = remainingWord.substring(key.length);
-                matchFound = true;
-                break;
-              }
-            }
-          }
-          
-          // If no G/F match found, use normal sorting
-          if (!matchFound) {
-            for (const key of sortedReverseKeys) {
-              if (remainingWord.startsWith(key)) {
-                translatedWord += reverseTranslationMap[key];
-                remainingWord = remainingWord.substring(key.length);
-                matchFound = true;
-                break;
-              }
+          // Use the sorted reverse keys to find the longest match first
+          for (const key of sortedReverseKeys) {
+            if (remainingWord.startsWith(key)) {
+              translatedWord += reverseTranslationMap[key];
+              remainingWord = remainingWord.substring(key.length);
+              matchFound = true;
+              break;
             }
           }
           
