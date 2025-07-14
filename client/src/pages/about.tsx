@@ -55,7 +55,7 @@ export default function About() {
                     Alfayo Odongo Mango
                   </h3>
                   <p className="text-gray-600 text-sm">
-                    Reverend Alfayo Odongo Mango is recognized as the patriarch and a pivotal figure of the Roho churches. His leadership of the Roho (Holy Spirit) movement commenced in the 1920s. His early life included formal schooling, with Walter Chadwick, Archdeacon Owen's predecessor and founder of the Church Missionary Society (CMS) mission station at Butere, taking an interest in his education. Central to Mango's spiritual authority was his profound experience of "possession by Roho".
+                    Reverend Alfayo Odongo Mango is recognized as the patriarch and a pivotal figure (Founder) of all Roho churches. His leadership of the Roho (Holy Spirit) movement commenced in the 1920s. His early life included formal schooling, with Walter Chadwick, Archdeacon Owen's predecessor and founder of the Church Missionary Society (CMS) mission station at Butere, taking an interest in his education. Central to Mango's spiritual authority was his profound experience of "possession by Roho".
                   </p>
                 </div>
                 
@@ -126,7 +126,7 @@ export default function About() {
                     Leadership Succession
                   </h3>
                   <p className="text-gray-700 text-sm md:text-base">
-                    Following the martyrdom of Alfayo Odongo Mango, <strong>Barnaba Waluoho Ojoro</strong> succeeded him as the leader of the Roho group, serving as Bishop or "Archbishop" from 1934 until 1980. His long tenure as Bishop was crucial for the post-martyrdom continuity and stability of the nascent church. Barnaba Waluoho specifically led the "Roho group at Ruwe," a faction that played a significant role in the efforts to unite various splinter indigenous faith groups. This consolidation was instrumental in the eventual formal registration of the Ruwe Holy Ghost Church in 1972. The swift and effective succession of Barnaba Waluoho as leader in the immediate aftermath of Mango's martyrdom demonstrates that, despite the traumatic loss of its founder and other key figures, the movement possessed a resilient leadership structure capable of ensuring its continuity. Barnaba's extended period of leadership further solidified the church's foundation, guiding it through critical phases of expansion and formal recognition.
+                    Following the martyrdom of Alfayo Odongo Mango, <strong>Barnaba Waluoho Ojoro</strong> succeeded him as the leader of the Roho movement, serving as Bishop or "Archbishop" from 1934 until 1980. His long tenure as Bishop was crucial for the post-martyrdom continuity and stability of the nascent church. Barnaba Waluoho specifically led the "Roho group at Ruwe," a faction that played a significant role in the efforts to unite various splinter indigenous faith groups. This consolidation was instrumental in the eventual formal registration of the Ruwe Holy Ghost Church in 1972. The swift and effective succession of Barnaba Waluoho as leader in the immediate aftermath of Mango's martyrdom demonstrates that, despite the traumatic loss of its founder and other key figures, the movement possessed a resilient leadership structure capable of ensuring its continuity. Barnaba's extended period of leadership further solidified the church's foundation, guiding it through critical phases of expansion and formal recognition.
                   </p>
                 </div>
                 

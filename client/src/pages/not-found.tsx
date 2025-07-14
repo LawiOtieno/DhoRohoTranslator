@@ -4,6 +4,13 @@ import { AlertCircle } from "lucide-react";
 export default function NotFound() {
   return (
     <div className="min-h-screen w-full flex items-center justify-center bg-gray-50">
+      <div className="flex justify-center items-center">
+        <img
+          src="https://i.imgur.com/BUxE9oF.jpg"
+          alt="Ruwe Holy Ghost Church Logo"
+          className="h-16 w-16 md:h-20 md:w-20 rounded-full shadow-lg"
+        />
+      </div>
       <Card className="w-full max-w-md mx-4">
         <CardContent className="pt-6">
           <div className="flex mb-4 gap-2">

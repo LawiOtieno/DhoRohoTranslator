@@ -67,7 +67,7 @@ export default function Navigation() {
           <div className="flex items-center justify-between p-4 border-b">
             <div className="flex items-center space-x-3">
               <img 
-                src="https://i.imgur.com/8ToqmB8.png" 
+                src="https://i.imgur.com/UkrjXEc.jpg" 
                 alt="Ruwe Holy Ghost Church Logo" 
                 className="h-8 w-8 rounded-full"
               />
