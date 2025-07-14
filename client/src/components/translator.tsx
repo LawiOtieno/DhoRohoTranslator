@@ -178,6 +178,9 @@ export default function Translator() {
       <div className="card">
         {/* Header Section */}
         <div className="text-center mb-8">
+          <div className="flex justify-center items-center">
+            <img src="https://i.imgur.com/8ToqmB8.png" alt="Ruwe Holy Ghost Church Letter-Head" className="mx-auto mb-4 shadow-lg"/>
+          </div>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">Dho Roho Translator</h1>
           <p className="text-gray-500 text-sm md:text-base">Translate your text between Luo and Dho Roho.</p>
         </div>
