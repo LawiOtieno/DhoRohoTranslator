@@ -1,7 +1,7 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist/public",
-  "devCommand": "npm run dev",
+  "devCommand": "vite --host 0.0.0.0",
   "installCommand": "npm install",
   "framework": "vite",
   "rewrites": [

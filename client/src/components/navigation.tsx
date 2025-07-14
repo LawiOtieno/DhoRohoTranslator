@@ -34,21 +34,17 @@ export default function Navigation() {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
-              <Link href="/">
-                <a className={`nav-link px-3 py-2 rounded-md text-sm font-medium transition-colors hover:text-red-600 hover:bg-gray-50 ${
-                  isActive("/") ? "text-red-600 bg-red-50" : "text-gray-700"
-                }`}>
-                  <Home className="inline mr-2" size={16} />
-                  Home
-                </a>
+              <Link href="/" className={`nav-link px-3 py-2 rounded-md text-sm font-medium transition-colors hover:text-red-600 hover:bg-gray-50 ${
+                isActive("/") ? "text-red-600 bg-red-50" : "text-gray-700"
+              }`}>
+                <Home className="inline mr-2" size={16} />
+                Home
               </Link>
-              <Link href="/about">
-                <a className={`nav-link px-3 py-2 rounded-md text-sm font-medium transition-colors hover:text-red-600 hover:bg-gray-50 ${
-                  isActive("/about") ? "text-red-600 bg-red-50" : "text-gray-700"
-                }`}>
-                  <Info className="inline mr-2" size={16} />
-                  About Us
-                </a>
+              <Link href="/about" className={`nav-link px-3 py-2 rounded-md text-sm font-medium transition-colors hover:text-red-600 hover:bg-gray-50 ${
+                isActive("/about") ? "text-red-600 bg-red-50" : "text-gray-700"
+              }`}>
+                <Info className="inline mr-2" size={16} />
+                About Us
               </Link>
             </div>
 
@@ -85,27 +81,17 @@ export default function Navigation() {
             </button>
           </div>
           <nav className="px-4 py-6 space-y-4">
-            <Link href="/">
-              <a
-                onClick={closeMobileMenu}
-                className={`mobile-nav-link w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors hover:text-red-600 hover:bg-gray-50 flex items-center ${
-                  isActive("/") ? "text-red-600 bg-red-50" : "text-gray-700"
-                }`}
-              >
-                <Home className="mr-3" size={20} />
-                Home
-              </a>
+            <Link href="/" onClick={closeMobileMenu} className={`mobile-nav-link w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors hover:text-red-600 hover:bg-gray-50 flex items-center ${
+              isActive("/") ? "text-red-600 bg-red-50" : "text-gray-700"
+            }`}>
+              <Home className="mr-3" size={20} />
+              Home
             </Link>
-            <Link href="/about">
-              <a
-                onClick={closeMobileMenu}
-                className={`mobile-nav-link w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors hover:text-red-600 hover:bg-gray-50 flex items-center ${
-                  isActive("/about") ? "text-red-600 bg-red-50" : "text-gray-700"
-                }`}
-              >
-                <Info className="mr-3" size={20} />
-                About Us
-              </a>
+            <Link href="/about" onClick={closeMobileMenu} className={`mobile-nav-link w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors hover:text-red-600 hover:bg-gray-50 flex items-center ${
+              isActive("/about") ? "text-red-600 bg-red-50" : "text-gray-700"
+            }`}>
+              <Info className="mr-3" size={20} />
+              About Us
             </Link>
           </nav>
         </div>

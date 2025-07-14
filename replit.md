@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a full-stack web application that provides translation between Luo and Dho Roho languages, built for the Ruwe Holy Ghost Church community. The application features a React frontend with a Node.js/Express backend, using modern web technologies and a clean, accessible design.
+This is a frontend-only React application that provides translation between Luo and Dho Roho languages, built for the Ruwe Holy Ghost Church community. The application features a React frontend using modern web technologies with a clean, accessible design, and includes historical information about the church.
 
 ## User Preferences
 
@@ -15,15 +15,13 @@ Preferred communication style: Simple, everyday language.
 - **Routing**: Wouter (lightweight client-side routing)
 - **UI Components**: Radix UI primitives with shadcn/ui component system
 - **Styling**: Tailwind CSS with CSS variables for theming
-- **State Management**: TanStack React Query for server state
+- **State Management**: React hooks for local component state
 - **Build Tool**: Vite for development and production builds
 
 ### Backend Architecture
-- **Runtime**: Node.js with Express.js framework
-- **Language**: TypeScript with ES modules
-- **Database**: PostgreSQL with Drizzle ORM
-- **Database Provider**: Neon Database (serverless PostgreSQL)
-- **Session Management**: In-memory storage (expandable to PostgreSQL sessions)
+- **Note**: This application is frontend-only with no backend or database dependencies
+- **Translation Logic**: Client-side processing with predefined mapping rules
+- **Data Storage**: No persistent data storage required
 
 ### Key Design Decisions
 
@@ -33,11 +31,10 @@ Preferred communication style: Simple, everyday language.
 - Implemented CSS variables for easy theming and dark mode support
 - TanStack Query provides robust caching and server state management
 
-**Backend Choices**:
-- Express.js chosen for simplicity and extensive ecosystem
-- Drizzle ORM provides type-safe database operations with PostgreSQL
-- In-memory storage for development, easily replaceable with database sessions
-- Modular route structure for scalability
+**Frontend-Only Architecture**:
+- No backend or database dependencies for maximum simplicity
+- Client-side translation engine with comprehensive language mapping
+- Static deployment-ready build for platforms like Vercel or Netlify
 
 ## Key Components
 
@@ -55,19 +52,17 @@ Preferred communication style: Simple, everyday language.
 - **System**: shadcn/ui components built on Radix UI primitives
 - **Styling**: Consistent design system with Tailwind CSS
 
-### Database Schema
-- **Location**: `shared/schema.ts`
-- **ORM**: Drizzle with PostgreSQL dialect
-- **Current Tables**: Users table with authentication fields
-- **Validation**: Zod schemas for type-safe data validation
+### Translation Engine
+- **Location**: `client/src/components/translator.tsx`
+- **Functionality**: Complete Luo ↔ Dho Roho translation with complex mapping rules
+- **Features**: Real-time translation, bidirectional conversion, copy functionality
 
 ## Data Flow
 
 1. **Client-Side Routing**: Wouter handles navigation without page refreshes
 2. **Translation Logic**: Client-side processing with predefined mapping rules
-3. **API Communication**: TanStack Query manages HTTP requests to Express backend
-4. **Database Operations**: Drizzle ORM handles PostgreSQL interactions
-5. **Session Management**: Express middleware with optional PostgreSQL session store
+3. **Local State Management**: React hooks manage component state and user interactions
+4. **Static Content**: Church history and translation rules stored as component data
 
 ## External Dependencies
 
