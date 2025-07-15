@@ -266,7 +266,7 @@ export default function Translator() {
               className="btn-translate bg-red-600 text-white font-bold py-3 px-8 rounded-xl hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 text-sm md:text-base"
             >
               <Languages className="mr-2" size={16} />
-              Translate (Lok)
+              Lok (Translate)
             </Button>
           </div>
 
