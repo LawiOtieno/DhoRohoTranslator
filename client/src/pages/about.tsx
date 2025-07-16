@@ -20,7 +20,9 @@ export default function About() {
           {/* Header */}
           <div className="text-center mb-8">
             <div className="flex justify-center items-center">
-              <img src="https://i.imgur.com/8ToqmB8.png" alt="Ruwe Holy Ghost Church Letter-Head" className="mx-auto mb-4 shadow-lg"/>
+              <a href="https://maps.app.goo.gl/n83SKs5SGdsrvZse6" target="_blank" rel="noopener noreferrer">
+                <img src="https://i.imgur.com/8ToqmB8.png" alt="Ruwe Holy Ghost Church Letter-Head" className="mx-auto mb-4 shadow-lg"/>
+              </a>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
               Brief History of Ruwe Holy Ghost Church EA
@@ -156,11 +158,13 @@ export default function About() {
             {/* Conclusion */}
             <section className="text-center bg-red-600 text-white p-6 rounded-xl">
               <div className="flex justify-center items-center">
-                <img
-                  src="https://i.imgur.com/BUxE9oF.jpg"
-                  alt="Ruwe Holy Ghost Church Logo"
-                  className="h-16 w-16 md:h-20 md:w-20 rounded-full shadow-lg"
-                />
+                <a href="https://maps.app.goo.gl/n83SKs5SGdsrvZse6" target="_blank" rel="noopener noreferrer">
+                  <img
+                    src="https://i.imgur.com/BUxE9oF.jpg"
+                    alt="Ruwe Holy Ghost Church Logo"
+                    className="h-16 w-16 md:h-20 md:w-20 rounded-full shadow-lg"
+                  />
+                </a>
               </div>
               <p className="text-lg md:text-xl font-medium leading-relaxed">
                 Ruwe Holy Ghost Church EA stands as a significant indigenous African church with a rich history rooted in spiritual independence.
