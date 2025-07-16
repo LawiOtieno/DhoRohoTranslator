@@ -29,8 +29,12 @@ export default function Navigation() {
                 />
               </a>
               <div className="hidden sm:block">
-                <h1 className="text-xl font-bold text-gray-800">Dho Roho</h1>
-                <p className="text-xs text-gray-500">Translator</p>
+                <a href="https://dho-roho-translator.vercel.app/" rel="noopener noreferrer">
+                  <h1 className="text-xl font-bold text-gray-800">Dho Roho</h1>
+                </a>
+                <a href="https://dho-roho-translator.vercel.app/" rel="noopener noreferrer">
+                  <p className="text-xs text-gray-500">Translator</p>
+                </a>
               </div>
             </div>
 
