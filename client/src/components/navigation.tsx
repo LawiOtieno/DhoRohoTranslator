@@ -21,11 +21,13 @@ export default function Navigation() {
           <div className="flex justify-between items-center h-16">
             {/* Logo and Brand */}
             <div className="flex items-center space-x-3">
-              <img 
-                src="https://i.imgur.com/BUxE9oF.jpg" 
-                alt="Ruwe Holy Ghost Church Logo" 
-                className="h-10 w-10 rounded-full shadow-md"
-              />
+              <a href="https://maps.app.goo.gl/n83SKs5SGdsrvZse6" target="_blank" rel="noopener noreferrer">
+                <img 
+                  src="https://i.imgur.com/BUxE9oF.jpg" 
+                  alt="Ruwe Holy Ghost Church Logo" 
+                  className="h-10 w-10 rounded-full shadow-md"
+                />
+              </a>
               <div className="hidden sm:block">
                 <h1 className="text-xl font-bold text-gray-800">Dho Roho</h1>
                 <p className="text-xs text-gray-500">Translator</p>
@@ -66,11 +68,13 @@ export default function Navigation() {
         }`}>
           <div className="flex items-center justify-between p-4 border-b">
             <div className="flex items-center space-x-3">
-              <img 
-                src="https://i.imgur.com/UkrjXEc.jpg" 
-                alt="Ruwe Holy Ghost Church Logo" 
-                className="h-8 w-8 rounded-full"
-              />
+              <a href="https://maps.app.goo.gl/n83SKs5SGdsrvZse6" target="_blank" rel="noopener noreferrer">
+                <img 
+                  src="https://i.imgur.com/UkrjXEc.jpg" 
+                  alt="Ruwe Holy Ghost Church Logo" 
+                  className="h-8 w-8 rounded-full"
+                />
+              </a>
               <span className="font-semibold text-gray-800">Dho Roho</span>
             </div>
             <button
